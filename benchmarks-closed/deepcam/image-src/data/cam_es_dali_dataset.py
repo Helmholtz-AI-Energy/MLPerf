@@ -351,7 +351,7 @@ class CamDaliESDataloader(object):
         # create ES
         self.extsource = NumpyExternalSource(self.data_files, self.label_files, self.batchsize,
                                              last_batch_mode = "drop",
-                                             # "partial" if self.is_validation else "drop",
+                                             #"partial" if self.is_validation else "drop",
                                              num_shards = self.num_shards, shard_id = self.shard_id,
                                              oversampling_factor = self.oversampling_factor, shuffle = self.shuffle,
                                              cache_data = self.cache_data, seed = self.seed)
